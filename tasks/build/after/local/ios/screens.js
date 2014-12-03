@@ -8,7 +8,7 @@
     helpers = require('../../../../helpers')(grunt);
     return {
       build: function(fn) {
-        var appName, phonegapPath, res, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6;
+        var appName, phonegapPath, res, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9;
         screens = helpers.config('screens');
         phonegapPath = helpers.config('path');
         appName = helpers.config('name');
@@ -45,6 +45,21 @@
         }
         if ((screens != null ? (_ref6 = screens.ios) != null ? _ref6.iphone568hx2 : void 0 : void 0) != null) {
           grunt.file.copy(screens.ios.iphone568hx2, path.join(res, 'Default-568h@2x~iphone.png'), {
+            encoding: null
+          });
+        }
+        if ((screens != null ? (_ref7 = screens.ios) != null ? _ref7.iphone736 : void 0 : void 0) != null) {
+          grunt.file.copy(screens.ios.iphone736, path.join(res, 'Default-736h.png'), {
+            encoding: null
+          });
+        }
+        if ((screens != null ? (_ref8 = screens.ios) != null ? _ref8.iphone667 : void 0 : void 0) != null) {
+          grunt.file.copy(screens.ios.iphone667, path.join(res, 'Default-667h.png'), {
+            encoding: null
+          });
+        }
+        if ((screens != null ? (_ref9 = screens.ios) != null ? _ref9.iphoneLand736 : void 0 : void 0) != null) {
+          grunt.file.copy(screens.ios.iphoneLand736, path.join(res, 'Default-Landscape-736h.png'), {
             encoding: null
           });
         }
