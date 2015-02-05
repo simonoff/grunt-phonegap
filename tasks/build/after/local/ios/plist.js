@@ -24,9 +24,7 @@
           doc.getElementsByTagName('dict')[0].appendChild(newNodes);
           grunt.file.write(plistFile, doc);
         }
-        if (fn) {
-          return fn();
-        }
+        return typeof fn === "function" ? fn() : void 0;
       }
     };
   };

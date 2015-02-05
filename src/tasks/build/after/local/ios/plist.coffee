@@ -26,4 +26,4 @@ module.exports = plist = (grunt) ->
 
       grunt.file.write plistFile, doc
 
-    if fn then fn()
+    fn?()

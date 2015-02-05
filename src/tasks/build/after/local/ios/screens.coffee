@@ -32,9 +32,11 @@ module.exports = screens = (grunt) ->
       grunt.file.copy screens.ios.iphone568hx2, path.join(res, 'Default-568h@2x~iphone.png'), encoding: null
 
     if screens?.ios?.iphone736hx3?
+      grunt.file.copy screens.ios.iphone736hx3, path.join(res, 'Default-736h@3x~iphone.png'), encoding: null
       grunt.file.copy screens.ios.iphone736hx3, path.join(res, 'Default-736h.png'), encoding: null
 
     if screens?.ios?.iphone667hx2?
+      grunt.file.copy screens.ios.iphone667hx2, path.join(res, 'Default-667h@2x~iphone.png'), encoding: null
       grunt.file.copy screens.ios.iphone667hx2, path.join(res, 'Default-667h.png'), encoding: null
 
     if fn then fn()
