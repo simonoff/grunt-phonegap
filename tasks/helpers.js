@@ -18,6 +18,7 @@
       'wp7': ['win32'],
       'wp8': ['win32'],
       'win8': ['win32'],
+      'windows': ['win32'],
       'tizen': []
     };
     return _.contains(compatibility[targetPlatform.toLowerCase()], process.platform.toLowerCase());

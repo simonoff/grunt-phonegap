@@ -22,6 +22,7 @@ canBuild = (targetPlatform) ->
     'wp7': ['win32']
     'wp8': ['win32'] # Specifically Windows 8
     'win8': ['win32'] # Specifically Windows 8
+    'windows': ['win32'] # Specifically Windows 8
     'tizen': []
 
   _.contains compatibility[targetPlatform.toLowerCase()], process.platform.toLowerCase()
